@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS blog CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+USE blog;
+
+CREATE TABLE iletisim (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    adsoyad VARCHAR(100),
+    email VARCHAR(100),
+    mesaj TEXT,
+    tarih TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
